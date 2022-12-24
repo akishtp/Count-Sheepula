@@ -7,11 +7,15 @@
 }
 .top-side {
   height: 40%;
-  /* background-color: blueviolet; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.sheepula-img {
+  width: 80%;
 }
 .bottom-side {
   height: 54%;
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

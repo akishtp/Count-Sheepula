@@ -1,9 +1,12 @@
+import sheepula from "./Assets/sheepula-full.png";
 import "./App.css";
 
 function App(): JSX.Element {
   return (
     <div className="App">
-      <div className="top-side"></div>
+      <div className="top-side">
+        <img src={sheepula} className="sheepula-img" alt="sheepula" />
+      </div>
       <div className="bottom-side">
         <input type="number" />
         <div className="button-row">
