@@ -1,27 +1,30 @@
+import Key from "../Key";
+import "./KeyPad.css";
+
 const KeyPad = () => {
   return (
     <div className="key-pad">
       <div className="input">123456789</div>
       <div className="keys">
         <div className="key-row">
-          <button className="key">1</button>
-          <button className="key">2</button>
-          <button className="key">3</button>
+          <Key value="1" />
+          <Key value="2" />
+          <Key value="3" />
         </div>
         <div className="key-row">
-          <button className="key">4</button>
-          <button className="key">5</button>
-          <button className="key">6</button>
+          <Key value="4" />
+          <Key value="5" />
+          <Key value="6" />
         </div>
         <div className="key-row">
-          <button className="key">7</button>
-          <button className="key">8</button>
-          <button className="key">9</button>
+          <Key value="7" />
+          <Key value="8" />
+          <Key value="9" />
         </div>
         <div className="key-row">
-          <button className="key">🔙</button>
-          <button className="key">0</button>
-          <button className="key">✔️</button>
+          <Key value="🔙" />
+          <Key value="0" />
+          <Key value="✔️" />
         </div>
       </div>
     </div>
