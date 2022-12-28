@@ -1,6 +1,10 @@
 import React from "react";
 
-const Key: React.FC = ({ value }) => {
+interface KeyProps {
+  value: String;
+}
+
+const Key: React.FC<KeyProps> = ({ value }) => {
   return <button className="key">{value}</button>;
 };
 
