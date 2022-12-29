@@ -17,8 +17,11 @@ export const sheepCounterSlice = createSlice({
     addKeyPress: (state, action: PayloadAction<string>) => {
       state.value += action.payload;
     },
+    removeKey: (state) => {
+      state.value = state.value.substring(0, state.value.length - 1);
+    },
   },
 });
-export const { addKeyPress } = sheepCounterSlice.actions;
+export const { addKeyPress, removeKey } = sheepCounterSlice.actions;
 
 export default sheepCounterSlice.reducer;

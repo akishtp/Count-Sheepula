@@ -1,8 +1,9 @@
 .key-pad {
   height: 60%;
-  width: 100%;
+  width: clamp(36%, 767px, 100%);
 }
 .key-pad .input {
+  height: 38px;
   font-size: 36px;
   text-align: center;
   margin: 4px 0;
@@ -33,7 +34,4 @@
 }
 
 @media screen and (min-width: 767px) {
-  .key-pad {
-    width: 36%;
-  }
 }

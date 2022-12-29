@@ -1,9 +1,11 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../app/store";
+import { removeKey } from "../../features/sheepCounterSlice";
 import Key from "../Key";
 import "./KeyPad.css";
 
 const KeyPad = () => {
+  const dispatch = useDispatch();
   let sheepValue = useSelector((state: RootState) => state.counter.value);
   return (
     <div className="key-pad">
@@ -25,7 +27,9 @@ const KeyPad = () => {
           <Key value="9" />
         </div>
         <div className="key-row">
-          <Key value="🔙" />
+          <button className="key" onClick={() => dispatch(removeKey())}>
+            🔙
+          </button>
           <Key value="0" />
           <Key value="✔️" />
         </div>
