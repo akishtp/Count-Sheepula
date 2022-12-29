@@ -1,10 +1,13 @@
+import { useSelector } from "react-redux";
+import { RootState } from "../../app/store";
 import Key from "../Key";
 import "./KeyPad.css";
 
 const KeyPad = () => {
+  let sheepValue = useSelector((state: RootState) => state.counter.value);
   return (
     <div className="key-pad">
-      <div className="input">123456789</div>
+      <div className="input">{sheepValue}</div>
       <div className="keys">
         <div className="key-row">
           <Key value="1" />
