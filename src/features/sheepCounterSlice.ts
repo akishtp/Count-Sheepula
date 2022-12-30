@@ -22,12 +22,14 @@ export const sheepCounterSlice = createSlice({
     removeKey: (state) => {
       state.value = state.value.substring(0, state.value.length - 1);
     },
-    resetSheepValue: (state) => {
-      state.value = "";
+    tooManySheeps: (state) => {
+      state.error = "error made";
+      state.value = "0";
     },
   },
 });
-export const { addKeyPress, removeKey, resetSheepValue } =
+
+export const { addKeyPress, removeKey, tooManySheeps } =
   sheepCounterSlice.actions;
 
 export default sheepCounterSlice.reducer;

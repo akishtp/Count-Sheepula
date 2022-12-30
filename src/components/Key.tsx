@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { useAppDispatch } from "../app/hooks";
 import { RootState } from "../app/store";
-import { addKeyPress, resetSheepValue } from "../features/sheepCounterSlice";
+import { addKeyPress, tooManySheeps } from "../features/sheepCounterSlice";
 
 interface KeyProps {
   value: string;
 }
 const Key: React.FC<KeyProps> = ({ value }) => {
+  const [error, setError] = useState();
   let sheepValue = useSelector((state: RootState) => state.counter.value);
 
   const dispatch = useAppDispatch();
@@ -15,7 +16,7 @@ const Key: React.FC<KeyProps> = ({ value }) => {
     if (sheepValue.length < 9) {
       dispatch(addKeyPress(value));
     } else {
-      resetSheepValue();
+      tooManySheeps();
     }
   };
   return (
