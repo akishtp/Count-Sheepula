@@ -13,7 +13,7 @@ const initialState: sheepValueState = {
   status: "idle",
   error: null,
   points: 0,
-  randNum: 20,
+  randNum: 1,
 };
 
 export const sheepCounterSlice = createSlice({

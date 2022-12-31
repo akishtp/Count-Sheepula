@@ -1,0 +1,20 @@
+.sheep-window {
+  /* animation: x 2.6s linear infinite alternate; */
+}
+
+.sheep-window img {
+  animation: y 0.8s linear infinite alternate;
+  animation: x 2.6s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 100px));
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 100px));
+  }
+}
