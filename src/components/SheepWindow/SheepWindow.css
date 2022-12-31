@@ -1,9 +1,21 @@
 .sheep-window {
   height: 40%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-@media screen and (min-width: 767px) {
+.sheep-window img {
+  display: block;
+  height: 94%;
+}
+.sheep-window .points-display {
+  width: 94%;
+  font-size: 36px;
+}
+/* @media screen and (min-width: 767px) {
   .sheep-window {
     background-color: black;
   }
-}
+} */

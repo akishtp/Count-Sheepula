@@ -4,12 +4,14 @@ export interface sheepValueState {
   value: string;
   status: "idle" | "loading" | "failed";
   error: null | string;
+  points: number;
 }
 
 const initialState: sheepValueState = {
   value: "",
   status: "idle",
   error: null,
+  points: 0,
 };
 
 export const sheepCounterSlice = createSlice({
@@ -25,7 +27,7 @@ export const sheepCounterSlice = createSlice({
       state.value = state.value.substring(0, state.value.length - 1);
     },
     tooManySheeps: (state) => {
-      state.error = "We dont ave that many sheeps. Try again!";
+      state.error = "We don't have that many sheeps. Try again!";
       state.value = "";
     },
   },
