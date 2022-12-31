@@ -17,14 +17,16 @@ export const sheepCounterSlice = createSlice({
   initialState,
   reducers: {
     addKeyPress: (state, action: PayloadAction<string>) => {
+      state.error = null;
       state.value += action.payload;
     },
     removeKey: (state) => {
+      state.error = null;
       state.value = state.value.substring(0, state.value.length - 1);
     },
     tooManySheeps: (state) => {
-      state.error = "error made";
-      state.value = "12345";
+      state.error = "We dont ave that many sheeps. Try again!";
+      state.value = "";
     },
   },
 });

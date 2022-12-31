@@ -8,7 +8,6 @@ interface KeyProps {
   value: string;
 }
 const Key: React.FC<KeyProps> = ({ value }) => {
-  const [error, setError] = useState();
   let sheepValue = useSelector((state: RootState) => state.counter.value);
 
   const dispatch = useAppDispatch();
