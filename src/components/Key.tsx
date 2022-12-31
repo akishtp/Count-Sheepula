@@ -16,7 +16,7 @@ const Key: React.FC<KeyProps> = ({ value }) => {
     if (sheepValue.length < 9) {
       dispatch(addKeyPress(value));
     } else {
-      tooManySheeps();
+      dispatch(tooManySheeps());
     }
   };
   return (

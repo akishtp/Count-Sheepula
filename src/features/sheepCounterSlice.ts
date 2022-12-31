@@ -24,7 +24,7 @@ export const sheepCounterSlice = createSlice({
     },
     tooManySheeps: (state) => {
       state.error = "error made";
-      state.value = "0";
+      state.value = "12345";
     },
   },
 });
