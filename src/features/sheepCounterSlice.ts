@@ -5,6 +5,7 @@ export interface sheepValueState {
   status: "idle" | "loading" | "failed";
   error: null | string;
   points: number;
+  randNum: number;
 }
 
 const initialState: sheepValueState = {
@@ -12,6 +13,7 @@ const initialState: sheepValueState = {
   status: "idle",
   error: null,
   points: 0,
+  randNum: 20,
 };
 
 export const sheepCounterSlice = createSlice({

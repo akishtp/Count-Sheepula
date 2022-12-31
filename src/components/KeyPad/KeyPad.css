@@ -23,8 +23,8 @@
 }
 .key-pad .key {
   border-radius: 100%;
-  height: 84px;
-  width: 84px;
+  height: 78px;
+  width: 78px;
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   backdrop-filter: blur(5px);
   border: 0;

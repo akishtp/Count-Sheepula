@@ -8,11 +8,12 @@
 }
 .sheep-window img {
   display: block;
-  height: 94%;
+  height: 84%;
 }
 .sheep-window .points-display {
   width: 94%;
   font-size: 36px;
+  margin: 10px 20px;
 }
 /* @media screen and (min-width: 767px) {
   .sheep-window {
