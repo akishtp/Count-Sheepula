@@ -26,3 +26,9 @@
     transform: translateX(0) scaleX(-1);
   }
 }
+
+@media screen and (min-width: 767px) {
+  .sheep-window img {
+    animation: sheepMove ease 7.5s infinite;
+  }
+}
