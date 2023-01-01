@@ -8,7 +8,7 @@
 }
 .sheep-window img {
   display: block;
-  height: 84%;
+  height: 64%;
   position: absolute;
   left: calc(100vw - 100%);
 }

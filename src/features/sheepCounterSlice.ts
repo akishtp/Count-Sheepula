@@ -35,9 +35,9 @@ export const sheepCounterSlice = createSlice({
     submitValue: (state) => {
       console.log(state.value + " sended" + state.randNum);
       if (state.value === state.randNum.toString()) {
+        state.randNum = Math.floor(Math.random() * 10 + 1);
         state.points += 1;
       }
-      state.randNum = Math.floor(Math.random() * 10 + 1);
       state.value = "";
     },
   },
