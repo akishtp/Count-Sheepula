@@ -32,10 +32,16 @@ export const sheepCounterSlice = createSlice({
       state.error = "We don't have that many sheeps. Try again!";
       state.value = "";
     },
+    submitValue: (state) => {
+      if (state.value === state.randNum.toString()) {
+        state.points += 1;
+        state.value = "";
+      }
+    },
   },
 });
 
-export const { addKeyPress, removeKey, tooManySheeps } =
+export const { addKeyPress, removeKey, tooManySheeps, submitValue } =
   sheepCounterSlice.actions;
 
 export default sheepCounterSlice.reducer;

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../app/store";
-import { removeKey } from "../../features/sheepCounterSlice";
+import { removeKey, submitValue } from "../../features/sheepCounterSlice";
 import Key from "../Key";
 import "./KeyPad.css";
 
@@ -31,7 +31,9 @@ const KeyPad = () => {
             🔙
           </button>
           <Key value="0" />
-          <Key value="✔️" />
+          <button className="key" onClick={() => dispatch(submitValue())}>
+            ✅
+          </button>
         </div>
       </div>
     </div>

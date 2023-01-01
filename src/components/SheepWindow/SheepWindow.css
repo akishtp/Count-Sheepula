@@ -2,18 +2,22 @@
   height: 40%;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 .sheep-window img {
   display: block;
   height: 84%;
+  position: absolute;
+  left: calc(100vw - 100%);
 }
 .sheep-window .points-display {
   width: 94%;
   font-size: 36px;
-  margin: 10px 20px;
+  top: 10px;
+  left: 20px;
+  position: absolute;
 }
 /* @media screen and (min-width: 767px) {
   .sheep-window {

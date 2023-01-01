@@ -1,15 +1,11 @@
-.sheep-window {
-  /* animation: x 2.6s linear infinite alternate; */
-}
-
 .sheep-window img {
-  animation: y 0.8s linear infinite alternate;
-  animation: x 2.6s linear infinite alternate;
+  /* animation: y 0.8s linear infinite alternate; */
+  animation: x 7.5s linear infinite alternate;
 }
 
 @keyframes x {
   100% {
-    transform: translateX(calc(100vw - 100px));
+    transform: translateX(calc(100vw));
   }
 }
 
