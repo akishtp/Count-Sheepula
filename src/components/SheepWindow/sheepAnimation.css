@@ -1,8 +1,32 @@
 .sheep-window .img0 {
-  animation: sheepThree ease 5s infinite;
+  animation: sheepZero 5s infinite;
 }
 .sheep-window .img1 {
-  animation: sheepOne ease-in-out 3s infinite;
+  animation: sheepOne 5s infinite;
+}
+.sheep-window .img2 {
+  animation: sheepTwo 5s infinite;
+}
+.sheep-window .img3 {
+  animation: sheepThree 5s infinite;
+}
+.sheep-window .img4 {
+  animation: sheepFour 5s infinite;
+}
+.sheep-window .img5 {
+  animation: sheepFive 5s infinite;
+}
+.sheep-window .img6 {
+  animation: sheepSix 5s infinite;
+}
+.sheep-window .img7 {
+  animation: sheepSeven 5s infinite;
+}
+.sheep-window .img8 {
+  animation: sheepEight 5s infinite;
+}
+.sheep-window .img9 {
+  animation: sheepNine 5s infinite;
 }
 
 @keyframes sheepZero {
@@ -267,6 +291,33 @@
 }
 @media screen and (min-width: 767px) {
   .sheep-window .img0 {
+    animation: sheepZero 10s infinite;
+  }
+  .sheep-window .img1 {
+    animation: sheepOne 12s infinite;
+  }
+  .sheep-window .img2 {
+    animation: sheepTwo 8s infinite;
+  }
+  .sheep-window .img3 {
+    animation: sheepThree 11s infinite;
+  }
+  .sheep-window .img4 {
+    animation: sheepFour 12.5s infinite;
+  }
+  .sheep-window .img5 {
+    animation: sheepFive 11.5s infinite;
+  }
+  .sheep-window .img6 {
+    animation: sheepSix 8.5s infinite;
+  }
+  .sheep-window .img7 {
+    animation: sheepSeven 9s infinite;
+  }
+  .sheep-window .img8 {
     animation: sheepEight 7.5s infinite;
+  }
+  .sheep-window .img9 {
+    animation: sheepNine 7s infinite;
   }
 }
