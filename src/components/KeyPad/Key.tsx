@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
-import { useAppDispatch } from "../app/hooks";
-import { RootState } from "../app/store";
-import { addKeyPress, tooManySheeps } from "../features/sheepCounterSlice";
+import { useAppDispatch } from "../../app/hooks";
+import { RootState } from "../../app/store";
+import { addKeyPress, tooManySheeps } from "../../features/sheepCounterSlice";
 
 interface KeyProps {
   value: string;

@@ -1,32 +1,32 @@
 .sheep-window .img0 {
-  animation: sheepZero 10s infinite;
+  animation: sheepZero ease 10s infinite;
 }
 .sheep-window .img1 {
-  animation: sheepOne 12s infinite;
+  animation: sheepOne ease-in 9s infinite;
 }
 .sheep-window .img2 {
-  animation: sheepTwo 8s infinite;
+  animation: sheepTwo 8s ease-in-out infinite;
 }
 .sheep-window .img3 {
-  animation: sheepThree 11s infinite;
+  animation: sheepThree 11s ease-out infinite;
 }
 .sheep-window .img4 {
-  animation: sheepFour 12.5s infinite;
+  animation: sheepFour 12.5s linear infinite;
 }
 .sheep-window .img5 {
-  animation: sheepFive 11.5s infinite;
+  animation: sheepFive 11.5s ease-in-out infinite;
 }
 .sheep-window .img6 {
-  animation: sheepSix 8.5s infinite;
+  animation: sheepSix 8.5s ease-out infinite;
 }
 .sheep-window .img7 {
-  animation: sheepSeven 9s infinite;
+  animation: sheepSeven 9s linear infinite;
 }
 .sheep-window .img8 {
-  animation: sheepEight 7.5s infinite;
+  animation: sheepEight 7.5s ease infinite;
 }
 .sheep-window .img9 {
-  animation: sheepNine 7s infinite;
+  animation: sheepNine 7s ease infinite;
 }
 @keyframes sheepZero {
   0% {

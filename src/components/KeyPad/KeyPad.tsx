@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../app/store";
 import { removeKey, submitValue } from "../../features/sheepCounterSlice";
-import Key from "../Key";
+import Key from "./Key";
 import "./KeyPad.css";
 
 const KeyPad = () => {
