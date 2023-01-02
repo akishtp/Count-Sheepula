@@ -82,19 +82,19 @@
     transform: translateX(calc((100vw - 100%) / 2)) translateY(-50%);
   }
   49% {
-    transform: translateX(0) scaleX(1) translateY(-50%);
+    transform: translateX(0) scaleX(1) translateY(50%);
   }
   50% {
-    transform: translateX(0) scaleX(-1);
+    transform: translateX(0) scaleX(-1) translateY(50%);
   }
   75% {
     transform: translateX(calc((100vw - 100%) / 2)) scaleX(-1) translateY(84%);
   }
   99% {
-    transform: translateX(calc(100vw - 100%)) scaleX(-1) translateY(50%);
+    transform: translateX(calc(100vw - 100%)) scaleX(-1) translateY(0%);
   }
   100% {
-    transform: translateX(calc(100vw - 100%)) scaleX(-1);
+    transform: translateX(calc(100vw - 100%)) scaleX(-1) translate(0%);
   }
 }
 @keyframes sheepThree {
