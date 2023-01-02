@@ -12,7 +12,7 @@ const Key: React.FC<KeyProps> = ({ value }) => {
 
   const dispatch = useAppDispatch();
   const handleKeyClick = () => {
-    if (sheepValue.length < 9) {
+    if (sheepValue.length < 4) {
       dispatch(addKeyPress(value));
     } else {
       dispatch(tooManySheeps());
