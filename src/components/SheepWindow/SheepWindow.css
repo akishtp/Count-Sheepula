@@ -8,7 +8,7 @@
 }
 .sheep-window img {
   display: block;
-  height: 64%;
+  height: 24%;
   position: absolute;
   left: calc(100vw - 100%);
 }
@@ -21,6 +21,6 @@
 }
 @media screen and (min-width: 767px) {
   .sheep-window img {
-    height: 24%;
+    height: 64%;
   }
 }
