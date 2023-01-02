@@ -40,6 +40,10 @@ export const sheepCounterSlice = createSlice({
       if (state.value === state.randNum.toString()) {
         state.randNum = Math.floor(Math.random() * 10 + 1);
         state.points += 1;
+      } else {
+        while (state.points > 0) {
+          state.points -= 1;
+        }
       }
       state.value = "";
     },
